@@ -11,8 +11,7 @@ export default function Home() {
             <i /> <span>MARK7 TECHNOLOGIES</span>
           </div>
           <h1>
-            Software for esports &<br />
-            <em>business communication.</em>
+            Software for esports &amp; <em>business communication.</em>
           </h1>
           <p>
             We build focused, purpose-built software rather than generic tools. Two core product lines are currently live and in active development.
@@ -52,8 +51,7 @@ export default function Home() {
 
           <div className="heading-main-title">
             <h2>
-              MARK 47 — Broadcast graphics.<br />
-              <span className="gradient-text-orange">Powered by real-time data.</span>
+              MARK 47 — Broadcast graphics. <span className="gradient-text-orange">Powered by real-time data.</span>
             </h2>
           </div>
         </Reveal>
@@ -153,8 +151,7 @@ export default function Home() {
 
           <div className="heading-main-title">
             <h2>
-              MARK 56 — Your 24/7 AI Agent<br />
-              <span className="gradient-text-green">for WhatsApp communication.</span>
+              MARK 56 — Your 24/7 AI Agent <span className="gradient-text-green">for WhatsApp communication.</span>
             </h2>
           </div>
         </Reveal>
@@ -247,8 +244,7 @@ export default function Home() {
 
           <div className="heading-main-title">
             <h2>
-              MARK 56 Voice —<br />
-              <span className="gradient-text-violet">Phone call AI for your business.</span>
+              MARK 56 Voice — <span className="gradient-text-violet">Phone call AI for your business.</span>
             </h2>
           </div>
         </Reveal>
@@ -302,8 +298,7 @@ export default function Home() {
               <i /> <span>DISCUSS YOUR PRODUCT DEMO</span>
             </div>
             <h2>
-              Ready to transform your<br />
-              broadcasts or customer service?
+              Ready to transform your broadcasts or customer service?
             </h2>
             <p>
               Book a live demo for MARK 47 broadcast software or get early access to MARK 56 WhatsApp AI agent for your business.

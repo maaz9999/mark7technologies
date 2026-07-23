@@ -37,6 +37,7 @@ html {
   background: radial-gradient(circle at 50% 0%, #0c1224 0%, #03050d 75%);
   color-scheme: dark;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -82,9 +83,12 @@ button, a {
   cursor: pointer;
 }
 
+/* GUARANTEED SHELL CONTAINER WITH PADDING ON ALL SCREENS */
 .shell {
-  width: min(1200px, calc(100% - 32px));
+  width: min(1200px, 100%);
+  padding-inline: 24px;
   margin-inline: auto;
+  position: relative;
 }
 
 .mono {
@@ -358,10 +362,10 @@ button, a {
 .hero-v2, .inner-hero {
   min-height: auto;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   gap: 36px;
-  align-items: flex-start;
-  padding-block: 140px 60px;
+  align-items: center;
+  padding-block: 130px 60px;
   position: relative;
   background: transparent !important;
   width: 100%;
@@ -374,19 +378,19 @@ button, a {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  max-width: 580px;
   width: 100%;
 }
 
 .hero-v2 h1, .inner-hero h1 {
   margin: 14px 0 12px;
-  font-size: clamp(28px, 4vw, 46px);
-  line-height: 1.1;
+  font-size: clamp(26px, 3.8vw, 46px);
+  line-height: 1.12;
   letter-spacing: -0.03em;
   font-weight: 800;
   color: #ffffff;
   text-align: left;
-  word-break: break-word;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 .hero-v2 h1 em, .inner-hero h1 em {
   font-style: normal;
@@ -396,7 +400,7 @@ button, a {
   -webkit-background-clip: text;
 }
 .hero-v2-copy > p, .inner-hero > div:first-child > p {
-  max-width: 540px;
+  max-width: 520px;
   color: #cbd5e1;
   font-size: 14px;
   line-height: 1.6;
@@ -641,7 +645,8 @@ button, a {
   letter-spacing: -0.025em !important;
   font-weight: 800 !important;
   color: #ffffff !important;
-  word-break: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
 }
 
 .gradient-text-orange {
@@ -1090,10 +1095,18 @@ button, a {
   margin-bottom: 14px !important;
 }
 
-/* ULTRA-RESPONSIVE MEDIA QUERIES FOR TABLETS & MOBILE PHONES */
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1050px) {
+  .hero-v2, .inner-hero {
+    grid-template-columns: 1fr;
+    padding-block: 90px 40px;
+    gap: 32px;
+  }
+}
+
 @media (max-width: 900px) {
   .shell {
-    width: min(100%, calc(100% - 24px));
+    padding-inline: 16px;
   }
   .site-header-floating {
     padding-inline: 8px;
@@ -1109,11 +1122,6 @@ button, a {
   }
   .menu-toggle {
     display: flex !important;
-  }
-  .hero-v2, .inner-hero {
-    grid-template-columns: 1fr;
-    padding-block: 100px 40px;
-    gap: 28px;
   }
   .hero-v2-copy, .inner-hero > div:first-child {
     max-width: 100%;
@@ -1143,7 +1151,7 @@ button, a {
 
 @media (max-width: 580px) {
   .shell {
-    width: calc(100% - 20px);
+    padding-inline: 14px;
   }
   .brand > span {
     display: none;
