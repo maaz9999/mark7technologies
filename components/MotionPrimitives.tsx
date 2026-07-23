@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 export function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
   return (
@@ -17,10 +17,11 @@ export function Reveal({ children, className = "", delay = 0 }: { children: Reac
   );
 }
 
-export function TiltCard({ children, className = "" }: { children: ReactNode; className?: string }) {
+export function TiltCard({ children, className = "", style }: { children: ReactNode; className?: string; style?: CSSProperties }) {
   return (
     <motion.article
       className={`tilt-card ${className}`}
+      style={style}
       whileHover={{ y: -6, scale: 1.01 }}
       transition={{ type: "spring", stiffness: 260, damping: 22 }}
     >
@@ -29,7 +30,7 @@ export function TiltCard({ children, className = "" }: { children: ReactNode; cl
   );
 }
 
-export function Hero3D() {
+export function Hero3D({ variant }: { variant?: string }) {
   return (
     <motion.div 
       className="hero-tech-card-wrapper"
@@ -42,7 +43,7 @@ export function Hero3D() {
         <div className="tech-card-header">
           <div className="badge-pill" style={{ background: "rgba(255, 77, 21, 0.12)", borderColor: "rgba(255, 77, 21, 0.3)", color: "var(--orange)" }}>
             <i style={{ background: "var(--orange)", boxShadow: "0 0 8px var(--orange)" }} />
-            <span>MARK7 PLATFORM CORE</span>
+            <span>MARK7 PLATFORM CORE {variant ? `// ${variant.toUpperCase()}` : ""}</span>
           </div>
           <span className="mono" style={{ fontSize: "10px", color: "#64748b", fontWeight: "600", letterSpacing: "0.08em" }}>v3.0 OPERATIONAL</span>
         </div>
