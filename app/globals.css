@@ -1079,6 +1079,17 @@ button, a {
   flex-wrap: wrap;
 }
 
+/* FOOTER COLUMN HEADINGS (PRODUCTS, COMPANY, INQUIRIES) — VIBRANT ORANGE */
+.footer-heading {
+  color: var(--orange-soft) !important;
+  font-family: var(--font-mono) !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 14px !important;
+}
+
 /* ULTRA-RESPONSIVE MEDIA QUERIES FOR TABLETS & MOBILE PHONES */
 @media (max-width: 900px) {
   .shell {
@@ -1092,7 +1103,7 @@ button, a {
     padding: 6px 12px;
     height: 52px;
   }
-  /* CRITICAL: HIDE DESKTOP NAV LINKS ON MOBILE & TABLET */
+  /* HIDE DESKTOP NAV LINKS ON MOBILE & TABLET */
   .nav-links {
     display: none !important;
   }
