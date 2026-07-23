@@ -1,0 +1,135 @@
+{
+  "_AnimatePresence-CF36eDEr.js": {
+    "file": "assets/AnimatePresence-CF36eDEr.js",
+    "name": "AnimatePresence",
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "_proxy-Da3Ccw55.js",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "_framework-BpSqSxVs.js": {
+    "file": "assets/framework-BpSqSxVs.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js"
+    ]
+  },
+  "_proxy-Da3Ccw55.js": {
+    "file": "assets/proxy-Da3Ccw55.js",
+    "name": "proxy",
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "_rolldown-runtime-BYbx6iT9.js": {
+    "file": "assets/rolldown-runtime-BYbx6iT9.js",
+    "name": "rolldown-runtime"
+  },
+  "components/GlobalBackground.tsx": {
+    "file": "assets/GlobalBackground-CSIKQIrw.js",
+    "name": "GlobalBackground",
+    "src": "components/GlobalBackground.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "components/MotionPrimitives.tsx": {
+    "file": "assets/MotionPrimitives-CTHG9ki3.js",
+    "name": "MotionPrimitives",
+    "src": "components/MotionPrimitives.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_proxy-Da3Ccw55.js",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "components/SiteChrome.tsx": {
+    "file": "assets/SiteChrome-3Mw97Phj.js",
+    "name": "SiteChrome",
+    "src": "components/SiteChrome.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_AnimatePresence-CF36eDEr.js",
+      "_proxy-Da3Ccw55.js",
+      "_framework-BpSqSxVs.js",
+      "node_modules/vinext/dist/shims/link.js"
+    ]
+  },
+  "components/SystemArchitectureDiagram.tsx": {
+    "file": "assets/SystemArchitectureDiagram-v5KKQbfc.js",
+    "name": "SystemArchitectureDiagram",
+    "src": "components/SystemArchitectureDiagram.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "_AnimatePresence-CF36eDEr.js",
+      "_proxy-Da3Ccw55.js",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-D8ECaAXj.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/link.js": {
+    "file": "assets/link-Dm6Y0bxu.js",
+    "name": "link",
+    "src": "node_modules/vinext/dist/shims/link.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-BpSqSxVs.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/router.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/router.js": {
+    "file": "assets/router-bk5D1FeB.js",
+    "name": "router",
+    "src": "node_modules/vinext/dist/shims/router.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-BpSqSxVs.js",
+      "node_modules/vinext/dist/shims/link.js"
+    ],
+    "dynamicImports": [
+      "_framework-BpSqSxVs.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "assets/index-CJSNY9yY.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "_framework-BpSqSxVs.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "components/GlobalBackground.tsx",
+      "virtual:vinext-app-browser-entry",
+      "components/SystemArchitectureDiagram.tsx",
+      "components/SiteChrome.tsx",
+      "node_modules/vinext/dist/shims/link.js",
+      "components/MotionPrimitives.tsx"
+    ]
+  }
+}

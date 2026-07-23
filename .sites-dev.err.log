@@ -1,0 +1,37 @@
+[2mDefault inspector port 9229 not available, using 9230 instead
+[22m
+[31mfailed to load config from D:\MARK7 TECHNOLOGIES\vite.config.ts[39m
+[2m6:50:36 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve './.openai/hosting.json' in vite.config.ts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m vite.config.ts:3:27 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m3 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"./.openai/hosting.json"[38;5;249m;[0m
+ [38;5;240m  │[0m                           ────────────┬───────────  
+ [38;5;240m  │[0m                                       ╰───────────── Module not found.
+[38;5;246m───╯[0m
+
+[2m6:50:36 AM[22m [31m[1m[vite][22m[39m server restart failed
+file:///D:/MARK7%20TECHNOLOGIES/node_modules/vinext/dist/server/socket-error-backstop.js:114
+		throw err;
+		^
+
+Error: EBUSY: resource busy or locked, watch 'D:\MARK7 TECHNOLOGIES\public\assets\Mark OI.png'
+    at FSWatcher.<computed> (node:internal/fs/watchers:321:19)
+    at Object.watch (node:fs:2548:36)
+    at createFsWatchInstance (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8497:16)
+    at setFsWatchListener (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8539:14)
+    at NodeFsHandler._watchWithNodeFs (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8653:20)
+    at NodeFsHandler._handleFile (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8697:24)
+    at NodeFsHandler._addToNodeFs (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8871:26)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:9670:146)
+    at NodeFsHandler._addToNodeFs (file:///D:/MARK7%20TECHNOLOGIES/node_modules/vite/dist/node/chunks/node.js:8876:18) {
+  errno: -4082,
+  syscall: 'watch',
+  code: 'EBUSY',
+  path: 'D:\\MARK7 TECHNOLOGIES\\public\\assets\\Mark OI.png',
+  filename: 'D:\\MARK7 TECHNOLOGIES\\public\\assets\\Mark OI.png'
+}
+
+Node.js v24.18.0

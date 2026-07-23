@@ -1,0 +1,19 @@
+
+  vinext dev  (Vite 8.0.13)
+
+[2m6:44:48 AM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [optimizer] bundling dependencies...
+Port 3000 is in use, trying another one...
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3001[22m/[39m
+  [32m➜[39m  [1mDebug[22m:   [2m[33mhttp://localhost:[1m3001[22m[2m/__debug[39m[22m
+ GET / 200 in 1.9s (compile: 1784382272.4s, render: 1.8s)
+[2m6:46:12 AM[22m [36m[1m[vite][22m[39m [34m[2m(rsc)[22m[39m [32mhmr update [39m[2m/app/globals.css[22m
+[2m6:46:12 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/app/globals.css?direct[22m
+[2m6:46:19 AM[22m [36m[1m[vite][22m[39m [34m[2m(rsc)[22m[39m [32mhmr update [39m[2m/app/globals.css[22m
+[2m6:46:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/app/globals.css?direct[22m
+[2m6:47:16 AM[22m [36m[1m[vite][22m[39m [32m.openai/hosting.json changed, restarting server...[39m
+[2m6:47:16 AM[22m [36m[1m[vite][22m[39m [34m[2m(rsc)[22m[39m Re-optimizing dependencies because lockfile has changed
+[2m6:47:16 AM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m Re-optimizing dependencies because lockfile has changed
+[2m6:47:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+[2m6:47:19 AM[22m [36m[1m[vite][22m[39m server restarted.
+ GET / 200 in 1.5s (compile: 1784382272.4s, render: 1.4s)
+[2m6:50:36 AM[22m [36m[1m[vite][22m[39m [32m.openai/hosting.json changed, restarting server...[39m
