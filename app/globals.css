@@ -351,14 +351,14 @@ button, a {
   flex-shrink: 0 !important;
 }
 
-/* 2-COLUMN HERO LAYOUT (PADDED SO FLOATING NAVBAR DOES NOT OVERLAP CONTENT) */
+/* 2-COLUMN HERO LAYOUT (SPACIOUS 210PX TOP PADDING BELOW STICKY NAVBAR) */
 .hero-v2, .inner-hero {
   min-height: auto !important;
   display: grid !important;
   grid-template-columns: 1.05fr 0.95fr !important;
   gap: 36px !important;
   align-items: flex-start !important;
-  padding-block: 170px 60px !important;
+  padding-block: 210px 60px !important;
   position: relative !important;
   background: transparent !important;
 }
@@ -1218,7 +1218,7 @@ button, a {
 @media (max-width: 1050px) {
   .hero-v2, .inner-hero {
     grid-template-columns: 1fr !important;
-    padding-block: 140px 40px !important;
+    padding-block: 160px 40px !important;
     gap: 32px !important;
   }
 }
