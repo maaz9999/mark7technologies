@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Hero3D, Reveal } from "../components/MotionPrimitives";
+import { Hero3D, Reveal, TiltCard } from "../components/MotionPrimitives";
 
 export default function Home() {
   return (
@@ -37,8 +37,8 @@ export default function Home() {
         <Hero3D />
       </section>
 
-      {/* Section 01 — MARK 47 BROADCAST SOFTWARE */}
-      <section className="content-section shell" id="mark47">
+      {/* Section 01 — ABOUT MARK7 TECHNOLOGIES */}
+      <section className="content-section shell" id="about">
         <Reveal className="route-heading-clean">
           <div className="heading-left-meta">
             <div className="section-number-pill">
@@ -46,99 +46,55 @@ export default function Home() {
               <span className="num-digits">01</span>
               <span className="num-dot" />
             </div>
-            <span className="section-category-tag">ESPORTS BROADCAST SOFTWARE</span>
+            <span className="section-category-tag">ABOUT MARK7 TECHNOLOGIES</span>
           </div>
 
           <div className="heading-main-title">
             <h2>
-              MARK 47 — Broadcast graphics. <span className="gradient-text-orange">Powered by real-time data.</span>
+              Clarity over complexity. <br />
+              <span className="gradient-text-orange">Engineered for zero downtime.</span>
             </h2>
           </div>
         </Reveal>
 
-        <div className="product-showcase-card glow-card">
-          <div className="product-showcase-grid">
-            <div className="showcase-left-copy">
-              <div className="badge-pill" style={{ marginBottom: "16px", background: "rgba(255, 77, 21, 0.12)", borderColor: "rgba(255, 77, 21, 0.35)", color: "var(--orange)" }}>
-                <i style={{ background: "var(--orange)", boxShadow: "0 0 8px var(--orange)" }} />
-                <span>STATUS: LIVE — PUBG MOBILE SHIPPING NOW</span>
-              </div>
-              
-              <h3 className="showcase-title">
-                Design-to-Broadcast Graphic Pipeline
-              </h3>
-
-              {/* Problem / Solution Highlight Boxes */}
-              <div className="showcase-block-list">
-                <div className="showcase-block problem-block">
-                  <div className="block-header">
-                    <span className="block-tag tag-red">THE PROBLEM</span>
-                  </div>
-                  <p>
-                    Esports tournament production relies on rigid, legacy tools. Organizers need live updating overlays without requiring a massive production crew.
-                  </p>
-                </div>
-
-                <div className="showcase-block solution-block">
-                  <div className="block-header">
-                    <span className="block-tag tag-orange-sol">WHAT MARK 47 DOES</span>
-                  </div>
-                  <p>
-                    Transforms your existing overlay PSDs into live, data-driven broadcast graphics. Player stats, scores, and standings update automatically with zero manual entry.
-                  </p>
-                </div>
-              </div>
-
-              {/* Clean Feature Pills */}
-              <div className="feature-pill-list">
-                <span>PUBG Mobile Module</span>
-                <span>vMix Browser Source</span>
-                <span>OBS Studio Ready</span>
-                <span>Automated Match Data</span>
-              </div>
-
-              <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                <Link className="button" href="/mark47">
-                  View Full MARK 47 Details &amp; Architecture <span>-&gt;</span>
-                </Link>
-              </div>
-            </div>
-
-            <div className="showcase-right-visual">
-              <div className="mark47-banner-wrapper">
-                <img src="/assets/MARK47.png" alt="MARK 47 Esports Broadcast Graphics Software" />
-                <div className="banner-overlay-badge">
-                  <span>60 FPS RENDER ENGINE</span>
-                </div>
-              </div>
-              <div className="veteran-box">
-                <span className="veteran-title">BUILT BY ESPORTS BROADCAST VETERANS</span>
-                <p className="veteran-desc">
-                  MARK 47 is engineered by competitive players, tournament organizers, and broadcast engineers — not developers guessing at tournament needs.
-                </p>
-              </div>
-            </div>
+        <div className="product-showcase-card glow-card" style={{ padding: "40px 36px" }}>
+          <div style={{ maxWidth: "860px", margin: "0 auto", textAlign: "left" }}>
+            <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#e2e8f0", fontWeight: "500", marginBottom: "24px" }}>
+              At <strong style={{ color: "#ffffff", fontWeight: "700" }}>Mark7 Technologies</strong>, we reject generic, off-the-shelf software tools. We design and deploy high-performance software systems tailored for industries where precision, real-time speed, and uninterrupted reliability carry immediate business consequences.
+            </p>
+            <p style={{ fontSize: "15px", lineHeight: "1.75", color: "#cbd5e1", margin: "0 0 32px" }}>
+              Whether powering live 60 FPS esports broadcast graphics for international tournaments or deploying autonomous AI agents that converse naturally in regional languages, our mission is simple: convert complex operational challenges into reliable, automated advantage.
+            </p>
           </div>
 
-          <div className="grid-features-3">
+          <div className="grid-features-3" style={{ marginTop: "16px" }}>
             <div className="feature-mini-box">
-              <h4>Design-to-Broadcast Pipeline</h4>
-              <p>Upload your PSD overlay designs and MARK 47 turns them into live, animated graphics — no rebuilding from scratch.</p>
+              <div style={{ fontSize: "20px", marginBottom: "8px" }}>⚡</div>
+              <h4 style={{ color: "#ffffff", fontSize: "16px", fontWeight: "700", marginBottom: "6px" }}>Evidence-Led Development</h4>
+              <p style={{ fontSize: "13px", color: "#cbd5e1", lineHeight: "1.6" }}>
+                Every system architectural decision is stress-tested against real load benchmarks before deployment. Zero guesswork.
+              </p>
             </div>
             <div className="feature-mini-box">
-              <h4>Live Data Binding</h4>
-              <p>Player names, scores, and match stats update automatically in real time, pulled directly from live game feeds.</p>
+              <div style={{ fontSize: "20px", marginBottom: "8px" }}>🛡️</div>
+              <h4 style={{ color: "#ffffff", fontSize: "16px", fontWeight: "700", marginBottom: "6px" }}>Mission-Critical Reliability</h4>
+              <p style={{ fontSize: "13px", color: "#cbd5e1", lineHeight: "1.6" }}>
+                Engineered for continuous uptime with clean telemetry, self-healing failovers, and low latency across all touchpoints.
+              </p>
             </div>
             <div className="feature-mini-box">
-              <h4>vMix &amp; OBS Ready</h4>
-              <p>Loads directly into existing production setups as a transparent browser source — no new hardware required.</p>
+              <div style={{ fontSize: "20px", marginBottom: "8px" }}>⚙️</div>
+              <h4 style={{ color: "#ffffff", fontSize: "16px", fontWeight: "700", marginBottom: "6px" }}>Ownership &amp; Clean Tech</h4>
+              <p style={{ fontSize: "13px", color: "#cbd5e1", lineHeight: "1.6" }}>
+                Type-safe TypeScript, modern cloud architectures, and transparent delivery with zero vendor lock-in.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 02 — MARK 56 WHATSAPP AI AGENT */}
-      <section className="content-section shell" id="mark56">
+      {/* Section 02 — WHAT WE BUILD (SOLUTION OVERVIEW) */}
+      <section className="content-section shell" id="solutions">
         <Reveal className="route-heading-clean">
           <div className="heading-left-meta">
             <div className="section-number-pill green-number-pill">
@@ -146,92 +102,78 @@ export default function Home() {
               <span className="num-digits">02</span>
               <span className="num-dot green-dot" />
             </div>
-            <span className="section-category-tag green-tag">WHATSAPP AI BUSINESS AGENT</span>
+            <span className="section-category-tag green-tag">OUR SPECIALIZED SOLUTIONS</span>
           </div>
 
           <div className="heading-main-title">
             <h2>
-              MARK 56 — Your 24/7 AI Agent <span className="gradient-text-green">for WhatsApp communication.</span>
+              Software built for high-impact domains.<br />
+              <span className="gradient-text-green">From broadcast media to conversational AI.</span>
             </h2>
           </div>
         </Reveal>
 
-        <div className="product-showcase-card glow-card" style={{ borderColor: "rgba(37, 211, 102, 0.2)" }}>
-          <div className="product-showcase-grid">
-            <div className="showcase-left-copy">
-              <div className="badge-pill badge-whatsapp" style={{ marginBottom: "16px" }}>
-                <i />
-                <span>STATUS: IN DEVELOPMENT — LAUNCHING SOON</span>
-              </div>
-              
-              <h3 className="showcase-title">
-                AI Customer Communications &amp; Real Availability Booking
-              </h3>
-
-              <div className="showcase-block-list">
-                <div className="showcase-block problem-block-wa">
-                  <div className="block-header">
-                    <span className="block-tag tag-red-wa">THE PROBLEM</span>
-                  </div>
-                  <p>
-                    Customers message on WhatsApp at 2am or during peak hours. Every missed message is a lost booking. Every unread voice note is a customer lost to a competitor.
-                  </p>
-                </div>
-
-                <div className="showcase-block solution-block-wa">
-                  <div className="block-header">
-                    <span className="block-tag tag-green-sol">WHAT MARK 56 DOES</span>
-                  </div>
-                  <p>
-                    An AI Agent that lives inside your WhatsApp business number. It understands text &amp; voice notes in Urdu, Roman Urdu, and English, answers inquiries, and books appointments.
-                  </p>
-                </div>
-              </div>
-
-              <div style={{ margin: "20px 0" }}>
-                <span style={{ display: "block", color: "#94a3b8", fontSize: "10px", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "8px" }}>Built For:</span>
-                <div className="feature-pill-list" style={{ margin: 0 }}>
-                  <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Hotels</span>
-                  <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Clinics</span>
-                  <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Salons</span>
-                  <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Real Estate</span>
-                  <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Restaurants</span>
-                </div>
-              </div>
-
-              <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                <Link className="button button-whatsapp" href="/mark56">
-                  View Full MARK 56 Details &amp; Architecture <span>-&gt;</span>
-                </Link>
-              </div>
+        <div className="card-grid-3" style={{ gridTemplateColumns: "repeat(2, 1fr)", gap: "24px" }}>
+          {/* Card 1: Broadcast Media */}
+          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(255, 77, 21, 0.25)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+              <span className="section-category-tag" style={{ background: "rgba(255, 77, 21, 0.12)", color: "var(--orange)", borderColor: "rgba(255, 77, 21, 0.3)" }}>
+                ESPORTS &amp; BROADCAST MEDIA
+              </span>
+              <span className="pill-status">LIVE SYSTEM</span>
             </div>
 
-            <div className="showcase-right-visual">
-              <div className="whatsapp-icon-wrapper">
-                <img src="/assets/WHATS APP ICON.png" alt="MARK 56 WhatsApp AI Agent" />
-              </div>
-            </div>
-          </div>
+            <h3 style={{ fontSize: "22px", fontWeight: "800", color: "#ffffff", margin: "0 0 12px" }}>
+              Real-Time Broadcast Overlays &amp; Data Pipeline
+            </h3>
 
-          <div className="grid-features-3" style={{ marginTop: "32px" }}>
-            <div className="feature-mini-box">
-              <h4>Understands Voice Notes</h4>
-              <p>Customers can send voice notes in Urdu — MARK 56 understands them and replies instantly like a human staff member.</p>
+            <p style={{ color: "#cbd5e1", fontSize: "14px", lineHeight: "1.65", margin: "0 0 20px" }}>
+              Automating tournament broadcast graphics by converting existing Photoshop designs into dynamic 60 FPS animated overlays. Powered by live data feeds, compatible with vMix &amp; OBS Studio.
+            </p>
+
+            <div className="feature-pill-list" style={{ marginBottom: "24px" }}>
+              <span>vMix &amp; OBS Ready</span>
+              <span>60 FPS Render Engine</span>
+              <span>Live Game Feed Sync</span>
             </div>
-            <div className="feature-mini-box">
-              <h4>Real Booking Management</h4>
-              <p>Checks real room availability, doctor timings, and calendar slots. Never promises a time slot that doesn't exist.</p>
+
+            <Link className="button" href="/mark47">
+              Explore Broadcast Solutions <span>-&gt;</span>
+            </Link>
+          </TiltCard>
+
+          {/* Card 2: WhatsApp & Voice AI */}
+          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(37, 211, 102, 0.25)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+              <span className="section-category-tag green-tag">
+                CONVERSATIONAL AI AGENTS
+              </span>
+              <span className="pill-status green-status">AI ENGINE</span>
             </div>
-            <div className="feature-mini-box">
-              <h4>Smart Human Handoff</h4>
-              <p>Sensitive questions or complex requests are transferred to your team instantly with full chat history &amp; context.</p>
+
+            <h3 style={{ fontSize: "22px", fontWeight: "800", color: "#ffffff", margin: "0 0 12px" }}>
+              WhatsApp &amp; Voice Business AI Communication
+            </h3>
+
+            <p style={{ color: "#cbd5e1", fontSize: "14px", lineHeight: "1.65", margin: "0 0 20px" }}>
+              24/7 intelligent business agents that understand voice notes and text in Urdu, Roman Urdu, and English. Handles customer inquiries, verifies availability, and automates appointment bookings.
+            </p>
+
+            <div className="feature-pill-list" style={{ marginBottom: "24px" }}>
+              <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Urdu Voice Note AI</span>
+              <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Live Calendar Booking</span>
+              <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Human Handoff</span>
             </div>
-          </div>
+
+            <Link className="button button-whatsapp" href="/mark56">
+              Explore AI Agent Solutions <span>-&gt;</span>
+            </Link>
+          </TiltCard>
         </div>
       </section>
 
-      {/* Section 03 — MARK 56 VOICE */}
-      <section className="content-section shell" id="mark56-voice">
+      {/* Section 03 — ENGINEERING STANDARDS & TELEMETRY */}
+      <section className="content-section shell" id="standards" style={{ paddingTop: "20px" }}>
         <Reveal className="route-heading-clean">
           <div className="heading-left-meta">
             <div className="section-number-pill violet-number-pill">
@@ -239,72 +181,68 @@ export default function Home() {
               <span className="num-digits">03</span>
               <span className="num-dot violet-dot" />
             </div>
-            <span className="section-category-tag violet-tag">UPCOMING CAPABILITY</span>
+            <span className="section-category-tag violet-tag">THE MARK7 STANDARD</span>
           </div>
 
           <div className="heading-main-title">
             <h2>
-              MARK 56 Voice — <span className="gradient-text-violet">Phone call AI for your business.</span>
+              Designed for speed. <br />
+              <span className="gradient-text-violet">Built for continuous scale.</span>
             </h2>
           </div>
         </Reveal>
 
-        <div className="product-showcase-card glow-card" style={{ borderColor: "rgba(139, 92, 246, 0.25)" }}>
-          <div className="product-showcase-grid">
-            <div className="showcase-left-copy">
-              <div className="badge-pill" style={{ marginBottom: "16px", background: "rgba(139, 92, 246, 0.1)", borderColor: "rgba(139, 92, 246, 0.3)", color: "var(--violet-soft)" }}>
-                <i style={{ background: "var(--violet)", boxShadow: "0 0 8px var(--violet)" }} />
-                <span>STATUS: IN DEVELOPMENT — COMING SOON</span>
-              </div>
-              
-              <h3 className="showcase-title">
-                Extending WhatsApp AI Intelligence to Phone Calls
-              </h3>
-              
-              <p style={{ color: "#cbd5e1", fontSize: "14px", lineHeight: "1.65", margin: "0 0 16px" }}>
-                MARK 56 Voice extends everything your AI Agent already knows about your business to real telephone calls. When a customer calls instead of messaging, the same AI answers naturally, schedules appointments, and transfers calls only when necessary.
-              </p>
+        <div className="card-grid-3" style={{ gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
+          <div className="feature-mini-box" style={{ textAlign: "center", padding: "24px 16px" }}>
+            <span className="mono" style={{ fontSize: "28px", fontWeight: "800", color: "var(--orange)", display: "block", marginBottom: "6px" }}>
+              &lt; 15 MS
+            </span>
+            <span style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "#94a3b8", fontWeight: "700" }}>
+              LATENCY BENCHMARK
+            </span>
+          </div>
 
-              <p style={{ color: "#94a3b8", fontSize: "12px", lineHeight: "1.55", margin: "0 0 20px" }}>
-                *This is a separate, upcoming capability currently in early development and will be rolled out for existing MARK 56 customers first.
-              </p>
+          <div className="feature-mini-box" style={{ textAlign: "center", padding: "24px 16px" }}>
+            <span className="mono" style={{ fontSize: "28px", fontWeight: "800", color: "var(--whatsapp-green)", display: "block", marginBottom: "6px" }}>
+              99.9%
+            </span>
+            <span style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "#94a3b8", fontWeight: "700" }}>
+              TARGET UPTIME
+            </span>
+          </div>
 
-              <Link className="button" style={{ background: "linear-gradient(135deg, var(--violet), #6d28d9)", boxShadow: "0 8px 20px rgba(139, 92, 246, 0.3)" }} href="/mark56-voice">
-                View MARK 56 Voice Details &amp; Waitlist <span>-&gt;</span>
-              </Link>
-            </div>
+          <div className="feature-mini-box" style={{ textAlign: "center", padding: "24px 16px" }}>
+            <span className="mono" style={{ fontSize: "28px", fontWeight: "800", color: "var(--cyan)", display: "block", marginBottom: "6px" }}>
+              60 FPS
+            </span>
+            <span style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "#94a3b8", fontWeight: "700" }}>
+              RENDER ENGINE
+            </span>
+          </div>
 
-            <div className="showcase-right-visual">
-              <div style={{ padding: "24px", border: "1px solid var(--line)", borderRadius: "14px", background: "rgba(139, 92, 246, 0.04)", width: "100%" }}>
-                <span style={{ color: "var(--violet-soft)", fontFamily: "var(--font-mono)", fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: "700" }}>VOICE CAPABILITIES (COMING SOON)</span>
-                <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0", color: "#cbd5e1", fontSize: "12.5px", lineHeight: "2" }}>
-                  <li>✓ Natural conversational voice speech</li>
-                  <li>✓ Shares knowledge base with MARK 56 WhatsApp</li>
-                  <li>✓ Automated phone appointment booking</li>
-                  <li>✓ Instant call transfer to staff upon request</li>
-                </ul>
-              </div>
-            </div>
+          <div className="feature-mini-box" style={{ textAlign: "center", padding: "24px 16px" }}>
+            <span className="mono" style={{ fontSize: "28px", fontWeight: "800", color: "var(--violet-soft)", display: "block", marginBottom: "6px" }}>
+              3+
+            </span>
+            <span style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "#94a3b8", fontWeight: "700" }}>
+              LANGUAGES SUPPORTED
+            </span>
           </div>
         </div>
       </section>
 
       {/* CTA / Contact Section */}
-      <section className="shell" style={{ marginBottom: "80px" }} id="contact">
+      <section className="shell" style={{ marginBlock: "60px 80px" }} id="contact">
         <div className="cta-v2">
           <div className="cta-grid-floor" />
           <Reveal>
             <div className="badge-pill" style={{ margin: "0 auto 14px auto" }}>
-              <i /> <span>DISCUSS YOUR PRODUCT DEMO</span>
+              <i /> <span>WORK WITH MARK7</span>
             </div>
-            <h2>
-              Ready to transform your broadcasts or customer service?
-            </h2>
-            <p>
-              Book a live demo for MARK 47 broadcast software or get early access to MARK 56 WhatsApp AI agent for your business.
-            </p>
+            <h2>Ready to transform your operations with purpose-built software?</h2>
+            <p>Speak directly with our engineering team to discuss your software goals.</p>
             <Link className="button button-light" href="/contact">
-              Contact Mark7 Technologies <span>-&gt;</span>
+              Contact Mark7 Engineering <span>-&gt;</span>
             </Link>
           </Reveal>
         </div>
@@ -312,3 +250,4 @@ export default function Home() {
     </main>
   );
 }
+
