@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Hero3D, Reveal, TiltCard } from "../components/MotionPrimitives";
+import { WebSamplesShowcase } from "../components/WebSamplesShowcase";
 
 export default function Home() {
   return (
@@ -115,7 +116,7 @@ export default function Home() {
 
         <div className="card-grid-3" style={{ gridTemplateColumns: "repeat(2, 1fr)", gap: "24px" }}>
           {/* Card 1: Broadcast Media */}
-          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(255, 77, 21, 0.25)" }}>
+          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(255, 77, 21, 0.25)", display: "flex", flexDirection: "column", height: "100%" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
               <span className="section-category-tag" style={{ background: "rgba(255, 77, 21, 0.12)", color: "var(--orange)", borderColor: "rgba(255, 77, 21, 0.3)" }}>
                 ESPORTS &amp; BROADCAST MEDIA
@@ -137,13 +138,13 @@ export default function Home() {
               <span>Live Game Feed Sync</span>
             </div>
 
-            <Link className="button" href="/mark47">
+            <Link className="button" style={{ marginTop: "auto", width: "100%", textAlign: "center", justifyContent: "center" }} href="/mark47">
               Explore Broadcast Solutions <span>-&gt;</span>
             </Link>
           </TiltCard>
 
           {/* Card 2: WhatsApp & Voice AI */}
-          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(37, 211, 102, 0.25)" }}>
+          <TiltCard className="depth-card" style={{ padding: "32px", borderColor: "rgba(37, 211, 102, 0.25)", display: "flex", flexDirection: "column", height: "100%" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
               <span className="section-category-tag green-tag">
                 CONVERSATIONAL AI AGENTS
@@ -165,20 +166,36 @@ export default function Home() {
               <span style={{ borderColor: "rgba(37, 211, 102, 0.3)", color: "#86efac" }}>Human Handoff</span>
             </div>
 
-            <Link className="button button-whatsapp" href="/mark56">
+            <Link className="button button-whatsapp" style={{ marginTop: "auto", width: "100%", textAlign: "center", justifyContent: "center" }} href="/mark56">
               Explore AI Agent Solutions <span>-&gt;</span>
             </Link>
           </TiltCard>
         </div>
       </section>
 
-      {/* Section 03 — ENGINEERING STANDARDS & TELEMETRY */}
+      {/* Section 03 — PRODUCTION WEB SAMPLES & CLIENT SHOWCASE */}
+      <WebSamplesShowcase
+        limit={6}
+        showFilters={true}
+        showSearch={false}
+        sectionNumber="03"
+        title="Featured Client Web Applications"
+        subtitle="Explore high-converting web apps, resort booking platforms, and custom digital software engineered by Mark7."
+      />
+
+      <div className="shell" style={{ marginTop: "-12px", marginBottom: "48px", textAlign: "center" }}>
+        <Link className="button button-pill-cta" style={{ background: "rgba(0, 240, 255, 0.12)", border: "1px solid var(--cyan)", color: "var(--cyan)", padding: "12px 28px", fontSize: "14px", fontWeight: "700" }} href="/samples">
+          Explore All 14 Live Web Samples <span>-&gt;</span>
+        </Link>
+      </div>
+
+      {/* Section 04 — ENGINEERING STANDARDS & TELEMETRY */}
       <section className="content-section shell" id="standards" style={{ paddingTop: "20px" }}>
         <Reveal className="route-heading-clean">
           <div className="heading-left-meta">
             <div className="section-number-pill violet-number-pill">
               <span className="num-slash">/</span>
-              <span className="num-digits">03</span>
+              <span className="num-digits">04</span>
               <span className="num-dot violet-dot" />
             </div>
             <span className="section-category-tag violet-tag">THE MARK7 STANDARD</span>

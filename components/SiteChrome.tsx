@@ -9,6 +9,7 @@ const links = [
   ["MARK 47", "/mark47"],
   ["MARK 56", "/mark56"],
   ["MARK 56 VOICE", "/mark56-voice"],
+  ["Projects", "/samples"],
   ["Products", "/products"],
   ["Process", "/process"],
 ];
@@ -137,10 +138,16 @@ export function SiteFooter() {
         {/* Col 3: Company / Process */}
         <div className="footer-col">
           <div className="footer-heading-wrap">
-            <span className="footer-heading">COMPANY</span>
+            <span className="footer-heading">PORTFOLIO</span>
             <span className="footer-heading-bar" />
           </div>
           <ul className="footer-links-list">
+            <li>
+              <Link href="/samples">
+                <span className="link-dot cyan-dot-link" />
+                <span>Web Samples Portfolio</span>
+              </Link>
+            </li>
             <li>
               <Link href="/process">
                 <span className="link-dot" />
@@ -177,7 +184,7 @@ export function SiteFooter() {
 
       {/* Bottom Full-Width Bar */}
       <div className="footer-bottom-bar shell">
-        <span className="copyright-text">
+        <span className="copyright-text" suppressHydrationWarning>
           © {new Date().getFullYear()} Mark7 Technologies Private Limited. All rights reserved.
         </span>
         <span className="rights-text">
